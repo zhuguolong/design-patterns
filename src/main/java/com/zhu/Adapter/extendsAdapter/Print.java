@@ -1,0 +1,9 @@
+package com.zhu.Adapter.extendsAdapter;
+
+/**
+ * 需求
+ */
+public interface Print {
+    public abstract void printWeak();
+    public abstract void printStrong();
+}
