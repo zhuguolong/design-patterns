@@ -6,12 +6,31 @@ package com.zhu.Singleton;
  */
 public class Test02 {
     public static void main(String[] args) {
-        Singleton_NotSerious instance = Singleton_NotSerious.getInstance();
-
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 20000; i++) {
             new Thread(() -> {
+                Singleton_NotSerious instance = Singleton_NotSerious.getInstance();
                 int count = instance.getCount();
-                System.out.println("剩余票数：" + count);
+                System.out.println("A-剩余票数：" + count);
+            }).start();
+            new Thread(() -> {
+                Singleton_NotSerious instance = Singleton_NotSerious.getInstance();
+                int count = instance.getCount();
+                System.out.println("B-剩余票数：" + count);
+            }).start();
+            new Thread(() -> {
+                Singleton_NotSerious instance = Singleton_NotSerious.getInstance();
+                int count = instance.getCount();
+                System.out.println("C-剩余票数：" + count);
+            }).start();
+            new Thread(() -> {
+                Singleton_NotSerious instance = Singleton_NotSerious.getInstance();
+                int count = instance.getCount();
+                System.out.println("D-剩余票数：" + count);
+            }).start();
+            new Thread(() -> {
+                Singleton_NotSerious instance = Singleton_NotSerious.getInstance();
+                int count = instance.getCount();
+                System.out.println("E-剩余票数：" + count);
             }).start();
         }
     }

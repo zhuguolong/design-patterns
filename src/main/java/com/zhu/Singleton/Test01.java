@@ -8,7 +8,7 @@ public class Test01 {
     public static void main(String[] args) {
         Singleton instance = Singleton.getInstance();
 
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 50000; i++) {
             new Thread(() -> {
                 int count = instance.getCount();
                 System.out.println("剩余票数：" + count);

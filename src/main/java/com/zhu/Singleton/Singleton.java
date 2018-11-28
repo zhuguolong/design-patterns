@@ -15,7 +15,7 @@ public class Singleton {
         System.out.println("Singleton构造方法，生成了一个实例！");
     }
 
-    private int ticket = 5000;
+    private int ticket = 50000;
     public synchronized int getCount() {
         return --ticket;
     }

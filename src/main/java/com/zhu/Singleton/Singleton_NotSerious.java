@@ -15,7 +15,7 @@ public class Singleton_NotSerious {
         System.out.println("Singleton_NotSerious生成了一个实例！");
     }
 
-    private int ticket = 5000;
+    private int ticket = 100000;
     public synchronized int getCount() {
         return --ticket;
     }
