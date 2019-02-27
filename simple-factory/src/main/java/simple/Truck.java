@@ -6,6 +6,6 @@ package simple;
  * @Date 2019/2/27 9:15
  * @Description 卡车接口
  */
-public interface Trunk {
+public interface Truck {
     public void run();
 }

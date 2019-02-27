@@ -6,6 +6,6 @@ package method;
  * @Date 2019/2/27 11:46
  * @Description
  */
-public interface TrunkFactory {
-    public Trunk produceTrunk();
+public interface TruckFactory {
+    public Truck produceTrunk();
 }

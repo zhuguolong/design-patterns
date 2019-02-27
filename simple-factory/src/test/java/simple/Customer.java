@@ -11,7 +11,7 @@ import org.junit.Test;
 public class Customer {
     @Test
     public void Test() {
-        TrunkFactory factory = new TrunkFactory();
+        TruckFactory factory = new TruckFactory();
         factory.produceTrunk("宝马").run();
         factory.produceTrunk("奥迪").run();
 //        factory.produceTrunk("五菱宏光").run();

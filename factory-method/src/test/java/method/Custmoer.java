@@ -10,10 +10,10 @@ import org.junit.Test;
 public class Custmoer {
     @Test
     public void customer() {
-        TrunkFactory bmw = new BmwTrunkFactory();
+        TruckFactory bmw = new BmwTruckFactory();
         bmw.produceTrunk().run();
 
-        TrunkFactory audi = new AudiTrunkFactory();
+        TruckFactory audi = new AudiTruckFactory();
         audi.produceTrunk().run();
     }
 }
