@@ -12,7 +12,7 @@ public class TrunkFactory {
         if ("宝马".equals(msg)) {
             return new BmwTrunk();
         } else if ("奥迪".equals(msg)) {
-            return new AudoTrunk();
+            return new AudiTrunk();
         } else {
             throw new IllegalArgumentException();
         }
