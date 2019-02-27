@@ -1,5 +1,7 @@
 package simplefactory;
 
+import org.junit.Test;
+
 /**
  * @author zhugu
  * @version 1.0
@@ -7,10 +9,11 @@ package simplefactory;
  * @Description 消费者
  */
 public class Customer {
-    public static void main(String[] args) {
+    @Test
+    public void Test() {
         TrunkFactory factory = new TrunkFactory();
         factory.produceTrunk("宝马").run();
         factory.produceTrunk("奥迪").run();
-        factory.produceTrunk("五菱宏光").run();
+//        factory.produceTrunk("五菱宏光").run();
     }
 }
