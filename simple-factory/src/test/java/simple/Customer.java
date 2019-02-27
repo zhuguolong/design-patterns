@@ -1,4 +1,4 @@
-package simplefactory;
+package simple;
 
 import org.junit.Test;
 
