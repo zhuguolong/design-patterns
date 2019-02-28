@@ -11,14 +11,16 @@ public class Singleton02 {
 
     private static Singleton02 singleton02;
 
-    public static synchronized Singleton02 getInstance() {
-        if (null == singleton02) {
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+    public static Singleton02 getInstance() {
+        synchronized (Singleton02.class) {
+            if (null == singleton02) {
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                singleton02 = new Singleton02();
             }
-            singleton02 = new Singleton02();
         }
         return singleton02;
     }
