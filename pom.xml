@@ -13,6 +13,7 @@
         <module>factory-method</module>
         <module>parent</module>
         <module>abstract-factory</module>
+        <module>singleton</module>
     </modules>
 
 
